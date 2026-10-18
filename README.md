@@ -39,3 +39,25 @@ Key Learnings
 - API integration and testing with Postman
 - CloudWatch monitoring and troubleshooting
 - Cloud security and cost awareness
+
+Repository Structure
+
+```text
+.
+├── README.md
+├── architecture.md
+├── config.json
+├── lambda/
+│   ├── customer-csv-processor/
+│   │   └── lambda_function.py
+│   └── customer-api-handler/
+│       └── lambda_function.py
+└── sample-data/
+    └── Customer_Test.csv
+```
+
+Notes
+- The sample CSV contains fictional demonstration data.
+- The Lambda functions are designed to run in AWS with the required resources and permissions configured.
+- Review the security settings and use appropriate authorization before handling real customer data.
+- AWS usage may incur charges depending on service usage and account eligibility.

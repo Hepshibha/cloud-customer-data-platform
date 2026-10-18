@@ -1,4 +1,5 @@
 
+```mermaid
 flowchart TD
     A["CSV File"] --> B["Amazon S3"]
     C["config.json"] --> B
@@ -11,8 +12,9 @@ flowchart TD
     I --> J["Lambda: API Handler"]
     J <--> G
 
-    E -. Logs .-> K["Amazon CloudWatch"]
-    J -. Logs .-> K
+    E -.-> K["Amazon CloudWatch"]
+    J -.-> K
 
     L["AWS IAM Permissions"] -.-> E
     L -.-> J
+```
